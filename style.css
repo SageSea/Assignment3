@@ -1,0 +1,73 @@
+body, h1, h3, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styles for the header */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Styling for main content area */
+main {
+    margin: 20px 0;
+    padding: 0;
+}
+
+/* Styling for sections */
+section {
+    margin-bottom: 20px;
+    overflow: hidden; /* Clear floats */
+}
+
+/* Styling for movie posters */
+section > div {
+    float: left;
+    width: calc(33.33% - 20px); /* Adjust width to fit three posters with spacing */
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+section > div:last-child {
+    margin-right: 0;
+}
+
+section > div img {
+    width: 100%; /* Make images fill the width of their container */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adding a subtle box shadow */
+}
+
+/* Styling for links section */
+h3 {
+    color: #333;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
